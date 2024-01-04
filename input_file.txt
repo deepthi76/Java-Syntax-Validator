@@ -1,0 +1,203 @@
+#variable declaration and initialization
+
+valid: 
+int a;
+long b=1008939393;
+c=10;
+
+invalid:
+char b
+int = 0 ;
+
+
+
+
+
+# expression 
+
+valid:
+3+4*(9/3+8)-8+12*3-9
+
+invalid:
+3+4*(9/3+8)-8+12*3-
+3+4-*3
+
+
+
+
+
+
+
+#if- else
+
+valid:
+if (x % 2 == 0) 
+{
+    y=2;
+} 
+else 
+{
+        x=4;
+}
+
+
+valid nesting:
+if (x % 2 == 0) 
+{
+    if(a==b)
+    {
+        y=2;
+    }
+    else
+    {
+        c=z;
+    }             
+} 
+else 
+{
+    x=4;
+}
+
+
+invalid:
+if (x % 2 == 0) 
+{
+    y=2
+} 
+els
+{
+        x=4;
+}
+
+
+
+
+
+
+
+
+#switch
+
+valid:
+ switch (dayOfWeek) {
+            case 1:
+                a=1;
+                break;
+            case 2:
+                a=2;
+                break;
+            case 3:
+                a=3;
+                break;
+            case 4:
+                a=4;
+                break;
+            case 5:
+                a=5;
+                break;
+            case 6:
+                a=6;
+                break;
+            case 7:
+                a=7;
+                break;
+            default:
+                a=1;   
+        }
+
+
+ switch (dayOfWeek) {
+            case 1:
+                a=1;
+                break;
+            case 2:
+                a=1;
+                break;
+            case 3:
+                a=1;
+                break;    
+        }
+
+invalid:
+
+ switch (dayOfWeek) {
+            case 1:
+                a=1;
+                
+            case 2:
+                a=1;
+                break;
+            case 3:
+                a=1;
+                break;    
+        }
+
+
+
+
+
+
+
+
+
+#while
+
+valid:
+while(3+1>=b)
+{
+    c=d+1;
+    int f=z;
+}
+
+invalid:
+while(3+1>=b):
+{
+    c=d+1;
+    int f=z;
+}
+
+
+
+
+
+
+
+
+
+
+#combination of while and if else
+
+valid:
+while(3+1>=b)
+{
+    if(m==n)
+    {
+        c=d+1;
+        int f=z;
+    }
+    else
+    {
+        x=y;
+    }
+}
+
+
+
+
+#combination of while and switch
+
+valid:
+while(3+1>=b)
+{
+     switch (dayOfWeek) {
+            case 1:
+                a=1;
+                break;
+            case 2:
+                a=1;
+                break;
+            case 3:
+                a=1;
+                break;    
+        }
+}
